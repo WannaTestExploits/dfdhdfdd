@@ -1,0 +1,17 @@
+if game.Players.LocalPlayer.PlayerGui.Hacks.Background.Visible == true then
+			game.Players.LocalPlayer.PlayerGui.Hacks.Open.Text = "Open"
+			game.Players.LocalPlayer.PlayerGui.Hacks.Background.Visible = false
+		else
+			game.Players.LocalPlayer.PlayerGui.Hacks.Open.Text = "Close"
+			game.Players.LocalPlayer.PlayerGui.Hacks.Background.Visible = true
+		end
+	end)
+
+	WalkSumbit.MouseButton1Click:connect(function()
+		character.Humanoid.WalkSpeed = tostring(Background.WalkBox.Text)
+	end)
+
+	JumpSumbit.MouseButton1Click:connect(function()
+		character.Humanoid.JumpPower = tostring(Background.JumpBox.Text)
+	end)
+	Print("Cheats Got Executed")
